@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Struts2Diagram version="2.0">
+  <package name="liu" location="10,10" size="2730,5250">
+    <action name="upload" location="2515,57" size="150,41">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="upload_re.jsp" />
+      </result>
+    </action>
+    <action name="index" location="2515,232" size="150,41">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="index.jsp" />
+      </result>
+    </action>
+    <action name="userReg" location="2270,233" size="150,40" />
+    <action name="userEdit" location="2270,128" size="150,40" />
+    <action name="userLogin" location="2025,128" size="150,40" />
+    <action name="userLogout" location="2025,407" size="150,41">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="default.jsp" />
+      </result>
+    </action>
+    <action name="userDel" location="1780,408" size="150,40" />
+    <action name="userMana" location="1780,582" size="150,41">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="userMana.jsp" />
+      </result>
+    </action>
+    <action name="userXinxi" location="1780,757" size="150,41">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="userXinxi.jsp" />
+      </result>
+    </action>
+    <action name="adminAdd" location="1535,758" size="150,40" />
+    <action name="adminEdit" location="0,0" size="0,0">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="adminManage.jsp" />
+      </result>
+    </action>
+    <action name="adminDel" location="1290,758" size="150,40" />
+    <action name="toadminEdit" location="0,0" size="0,0">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="adminEdit.jsp" />
+      </result>
+    </action>
+    <action name="adminManage" location="1290,932" size="150,41">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="adminManage.jsp" />
+      </result>
+    </action>
+    <action name="adminManageFenye" location="1290,1107" size="150,41">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="adminManageFenye.jsp" />
+      </result>
+    </action>
+    <action name="liuyanMana" location="1290,1282" size="150,41">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="liuyanMana.jsp" />
+      </result>
+    </action>
+    <action name="liuyanAdd" location="1290,1388" size="150,40" />
+    <action name="liuyanDel" location="1045,1388" size="150,40" />
+    <action name="liuyanAll" location="1045,1492" size="150,41">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="liuyanAll.jsp" />
+      </result>
+    </action>
+    <action name="gonggaoAdd" location="800,1493" size="150,40" />
+    <action name="gonggaoDel" location="555,1493" size="150,40" />
+    <action name="gonggaoMana" location="555,1667" size="150,41">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="gonggaoMana.jsp" />
+      </result>
+    </action>
+    <action name="gonggaoDetail" location="555,1842" size="150,41">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="gonggaoDetail.jsp" />
+      </result>
+    </action>
+    <action name="gonggaoDetailQian" location="555,2017" size="150,41">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="gonggaoDetailQian.jsp" />
+      </result>
+    </action>
+    <action name="gonggaoQian5" location="555,2192" size="150,41">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="gonggaoQian5.jsp" />
+      </result>
+    </action>
+    <action name="catelogMana" location="555,2367" size="150,41">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="catelogMana.jsp" />
+      </result>
+    </action>
+    <action name="catelogAdd" location="310,2368" size="150,40" />
+    <action name="catelogEdit" location="0,0" size="0,0" />
+    <action name="catelogDel" location="65,2368" size="150,40" />
+    <action name="catelogEditPre" location="0,0" size="0,0">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="catelogEditPre.jsp" />
+      </result>
+    </action>
+    <action name="catelogAll" location="65,2542" size="150,41">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="catelogAll.jsp" />
+      </result>
+    </action>
+    <action name="goodsNoTejiaAdd" location="65,2648" size="150,40" />
+    <action name="goodsNoTejiaDel" location="2515,2648" size="150,40" />
+    <action name="goodsManaNoTejia" location="2515,2752" size="150,41">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="goodsManaNoTejia.jsp" />
+      </result>
+    </action>
+    <action name="goodsEditPre" location="0,0" size="0,0">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="goodsNoTejiaEdit.jsp" />
+      </result>
+    </action>
+    <action name="goodsEdit" location="0,0" size="0,0" />
+    <action name="goodsYesTejiaAdd" location="2270,2753" size="150,40" />
+    <action name="goodsYesTejiaDel" location="2025,2753" size="150,40" />
+    <action name="goodsManaYesTejia" location="2025,2927" size="150,41">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="goodsManaYesTejia.jsp" />
+      </result>
+    </action>
+    <action name="goodsDetail" location="2025,3102" size="150,41">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="goodsDetail.jsp" />
+      </result>
+    </action>
+    <action name="goodsAllYesTejia" location="2025,3277" size="150,41">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="goodsAllYesTejia.jsp" />
+      </result>
+    </action>
+    <action name="goodsAllNoTejia" location="2025,3452" size="150,41">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="goodsAllNoTejia.jsp" />
+      </result>
+    </action>
+    <action name="goodsByCatelog" location="2025,3627" size="150,41">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="goodsByCatelog.jsp" />
+      </result>
+    </action>
+    <action name="goodSearch" location="2025,3802" size="150,41">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="goodSearch.jsp" />
+      </result>
+    </action>
+    <action name="goodsDetailHou" location="2025,3977" size="150,41">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="goodsDetailHou.jsp" />
+      </result>
+    </action>
+    <action name="testCart" location="2025,4083" size="150,40" />
+    <action name="addToCart" location="2515,4083" size="150,40" />
+    <action name="myCart" location="2515,4187" size="150,41">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="myCart.jsp" />
+      </result>
+    </action>
+    <action name="orderQueren" location="2515,4362" size="150,41">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="orderQueren.jsp" />
+      </result>
+    </action>
+    <action name="orderSubmit" location="2515,4537" size="150,41">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="orderSubmit.jsp" />
+      </result>
+    </action>
+    <action name="myOrder" location="2515,4712" size="150,41">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="myOrder.jsp" />
+      </result>
+    </action>
+    <action name="orderDetail" location="2515,4887" size="150,41">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="orderDetail.jsp" />
+      </result>
+    </action>
+    <action name="orderDetailPing" location="0,0" size="0,0">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="orderDetailPing.jsp" />
+      </result>
+    </action>
+    <action name="orderPing" location="0,0" size="0,0">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="ping_success.jsp" />
+      </result>
+    </action>
+    <action name="orderDel" location="2270,4888" size="150,40" />
+    <action name="orderShouhuo" location="0,0" size="0,0" />
+    <action name="orderMana" location="2270,5062" size="150,41">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="orderMana.jsp" />
+      </result>
+    </action>
+    <action name="orderDelByAd" location="2270,5168" size="150,40" />
+    <action name="orderShouli" location="2515,5168" size="150,40" />
+    <action name="lianjieAdd" location="0,0" size="0,0" />
+    <action name="lianjieDel" location="0,0" size="0,0" />
+    <action name="lianjieMana" location="0,0" size="0,0">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="lianjieMana.jsp" />
+      </result>
+    </action>
+    <action name="xiaoliang" location="0,0" size="0,0">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="goodsXiaoliang.jsp" />
+      </result>
+    </action>
+  </package>
+  <webResource name="upload_re.jsp" path="/upload/upload_re.jsp" location="2803,30" size="150,55" />
+  <webResource name="index.jsp" path="/qiantai/index.jsp" location="2783,205" size="150,55" />
+  <webResource name="default.jsp" path="/qiantai/default.jsp" location="2778,380" size="150,55" />
+  <webResource name="userMana.jsp" path="/admin/user/userMana.jsp" location="2791,555" size="150,55" />
+  <webResource name="userXinxi.jsp" path="/admin/order/userXinxi.jsp" location="2790,730" size="150,55" />
+  <webResource name="adminManage.jsp" path="/admin/index/adminManage.jsp" location="2775,905" size="150,55" />
+  <webResource name="adminManageFenye.jsp" path="/admin/index/adminManageFenye.jsp" location="2793,1080" size="150,55" />
+  <webResource name="liuyanMana.jsp" path="/admin/liuyan/liuyanMana.jsp" location="2783,1255" size="150,55" />
+  <webResource name="liuyanAll.jsp" path="/qiantai/liuyan/liuyanAll.jsp" location="2791,1465" size="150,55" />
+  <webResource name="gonggaoMana.jsp" path="/admin/gonggao/gonggaoMana.jsp" location="2797,1640" size="150,55" />
+  <webResource name="gonggaoDetail.jsp" path="/admin/gonggao/gonggaoDetail.jsp" location="2797,1815" size="150,55" />
+  <webResource name="gonggaoDetailQian.jsp" path="/qiantai/gonggao/gonggaoDetailQian.jsp" location="2782,1990" size="150,55" />
+  <webResource name="gonggaoQian5.jsp" path="/qiantai/gonggao/gonggaoQian5.jsp" location="2795,2165" size="150,55" />
+  <webResource name="catelogMana.jsp" path="/admin/catelog/catelogMana.jsp" location="2808,2340" size="150,55" />
+  <webResource name="catelogAll.jsp" path="/qiantai/catelog/catelogAll.jsp" location="2781,2515" size="150,55" />
+  <webResource name="goodsManaNoTejia.jsp" path="/admin/goods/goodsManaNoTejia.jsp" location="2790,2725" size="150,55" />
+  <webResource name="goodsManaYesTejia.jsp" path="/admin/goods/goodsManaYesTejia.jsp" location="2789,2900" size="150,55" />
+  <webResource name="goodsDetail.jsp" path="/qiantai/goods/goodsDetail.jsp" location="2776,3075" size="150,55" />
+  <webResource name="goodsAllYesTejia.jsp" path="/qiantai/goods/goodsAllYesTejia.jsp" location="2797,3250" size="150,55" />
+  <webResource name="goodsAllNoTejia.jsp" path="/qiantai/goods/goodsAllNoTejia.jsp" location="2798,3425" size="150,55" />
+  <webResource name="goodsByCatelog.jsp" path="/qiantai/goods/goodsByCatelog.jsp" location="2798,3600" size="150,55" />
+  <webResource name="goodSearch.jsp" path="/qiantai/goods/goodSearch.jsp" location="2776,3775" size="150,55" />
+  <webResource name="goodsDetailHou.jsp" path="/admin/goods/goodsDetailHou.jsp" location="2801,3950" size="150,55" />
+  <webResource name="myCart.jsp" path="/qiantai/myCart/myCart.jsp" location="2790,4160" size="150,55" />
+  <webResource name="orderQueren.jsp" path="/qiantai/order/orderQueren.jsp" location="2776,4335" size="150,55" />
+  <webResource name="orderSubmit.jsp" path="/qiantai/order/orderSubmit.jsp" location="2778,4510" size="150,55" />
+  <webResource name="myOrder.jsp" path="/qiantai/order/myOrder.jsp" location="2788,4685" size="150,55" />
+  <webResource name="orderDetail.jsp" path="/qiantai/order/orderDetail.jsp" location="2781,4860" size="150,55" />
+  <webResource name="orderMana.jsp" path="/admin/order/orderMana.jsp" location="2783,5035" size="150,55" />
+  <webResource name="lianjieMana.jsp" path="/admin/lianjie/lianjieMana.jsp" location="0,0" size="0,0" />
+  <webResource name="goodsXiaoliang.jsp" path="/admin/xiaoliang/goodsXiaoliang.jsp" location="0,0" size="0,0" />
+  <webResource name="adminEdit.jsp" path="/admin/index/adminEdit.jsp" location="0,0" size="0,0" />
+  <webResource name="catelogEditPre.jsp" path="/admin/catelog/catelogEditPre.jsp" location="0,0" size="0,0" />
+  <webResource name="goodsNoTejiaEdit.jsp" path="/admin/goods/goodsNoTejiaEdit.jsp" location="0,0" size="0,0" />
+  <webResource name="orderDetailPing.jsp" path="/qiantai/order/orderDetailPing.jsp" location="0,0" size="0,0" />
+  <webResource name="ping_success.jsp" path="/common/ping_success.jsp" location="0,0" size="0,0" />
+</Struts2Diagram>
+

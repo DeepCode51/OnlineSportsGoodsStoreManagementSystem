@@ -1,0 +1,94 @@
+@charset "utf-8";
+/**
+ * 商桥展现端 邀请框样式
+ * 全部以BDBridgeInviteWrap为前缀，提高优先级
+ * 原有修复暂不去掉，保证稳定性
+ * @charset "utf-8" 
+ * 由于所以模块都引入，暂时只有icon @import m-front-redim.css 其它模块不需要引入
+ * @author renshaobo@baidu.com
+ */
+
+#BDBridgeInviteWrap {  
+    z-index:2147483647; 
+}
+
+#BDBridgeInviteWrap #BDBridgeChatBox {
+    display:none; 
+    z-index:2147483648; 
+    width:310px; 
+    height:49px; 
+    padding:13px 7px 0 5px; 
+    margin:-6px 0 0 0; 
+    position:relative; 
+    background:url(../../img/invite-send-bg-right.png) no-repeat top right; 
+    line-height:normal;
+    overflow:hidden;
+}
+#BDBridgeInviteWrap #BDBridgeChatArea{
+    position:absolute; 
+    top:13px; 
+    left:5px; 
+    width:254px; 
+    height:31px; 
+    border:1px solid #999; 
+    font-family:Tahoma; 
+    font-size:12px; 
+    line-height:15px; 
+    resize:none;
+    background:#fff; 
+    font-weight:normal;
+    text-align: left;
+}
+#BDBridgeInviteWrap #BDBridgeStartChat{
+    position:absolute; 
+    top:13px; 
+    right:10px; 
+    height:35px; 
+    width:39px; 
+    background:url(../../img/invite-send.gif); 
+    text-decoration:none;
+    line-height:normal;
+}
+#BDBridgeInviteWrap #BDBridgeStartChat:hover{
+    background:url(../../img/invite-send.gif) 0 -35px;
+    position:absolute; 
+    line-height:normal;
+}
+#BDBridgeInviteWrap #BDBridgeStartChat:active{
+    background:url(../../img/invite-send.gif) 0 -70px;
+    position:absolute; 
+    line-height:normal;
+}
+
+
+#BDBridgeInviteWrap #InviteContainer{width:320px; height:153px;z-index:2147483647;position:relative; text-align:center;margin-left:0;margin-right:0;overflow:hidden;}
+#BDBridgeInviteWrap #bridgeTopContainer{width:312px; height:144px; -moz-border-radius:6px; -webkit-border-radius:6px; border-radius:6px;}
+
+
+#BDBridgeInviteWrap #ChatBox{width:301px; height:49px; padding:13px 7px 0 5px; margin-top:-12px; background:url(../css/img/invite-send-bg.png); _background:url(../css/img/invite-send-bg.gif)}
+#BDBridgeInviteWrap #ChatBox a{float:right; height:35px; width:39px; background:url(../css/img/invite-send.gif); text-decoration:none}
+#BDBridgeInviteWrap #ChatBox a:hover{background:url(../css/img/invite-send.gif) 0 -35px}
+#BDBridgeInviteWrap #ChatBox a:active{background:url(../css/img/invite-send.gif) 0 -70px}
+
+#BDBridgeInviteWrap .opacitymask {filter:alpha(opacity=100);-moz-opacity:1;-khtml-opacity: 1;opacity: 1;}
+#BDBridgeInviteWrap .opacitymaskhover {filter:alpha(opacity=60);-moz-opacity:0.6;-khtml-opacity: 0.6;opacity: 0.6;cursor:pointer;}
+#BDBridgeInviteWrap .opacitybtn{filter:alpha(opacity=100);-moz-opacity:1;-khtml-opacity: 1;opacity: 1;width:115px;height:47px;}
+#BDBridgeInviteWrap .opacitybtn:hover {filter:alpha(opacity=60);-moz-opacity:0.6;-khtml-opacity: 0.6;opacity: 0.6;position:absolute;}
+#BDBridgeInviteWrap #decorationskin{float:left; margin-left:5px; margin-top:5px; border:2px solid #fff;}
+#BDBridgeInviteWrap #inviteright { float: left; width: auto; clear: none;}
+#BDBridgeInviteWrap #bridgeinviteclose{position:absolute;width:10px;height:10px;top:5px;right:5px;background:url(../../img/matrix/btn.png) -19px -63px;}
+#BDBridgeInviteWrap #bridgeinviteclose:hover{filter:alpha(opacity=60);-moz-opacity:0.6;-khtml-opacity: 0.6;opacity: 0.6;}
+#BDBridgeInviteWrap .bridge-invite-button div{float:right;}
+#BDBridgeInviteWrap #preinvitetext{margin-left:10px;word-wrap: break-word;word-break: normal;text-align:left; zoom: 1;}
+#BDBridgeInviteWrap #preinvitetext a {text-decoration : none;}
+#BDBridgeInviteWrap .bdbridge-clearfix:after{content:".";display:block;visibility:hidden;height:1px;clear:both;}
+#BDBridgeInviteWrap .bdbridge-clearfix { *zoom: 1; }
+
+#BDBridgeInviteWrap #InviteContainer .bridge-invite-button {position:absolute; bottom:5px; right:5px; top:auto; left:auto;}
+#BDBridgeInviteWrap #InviteContainer .invite-button {color:#000; -moz-border-radius:6px; -webkit-border-radius:6px; border-radius:6px; cursor:pointer;clear: none;}
+#BDBridgeInviteWrap #InviteContainer .invite-button-hover {filter:alpha(opacity=80);-moz-opacity:0.8;-khtml-opacity: 0.8;opacity: 0.8;}
+
+#BDBridgeInviteWrap #BDBridgeChatBg {float:left; height:62px; width: 20px; background: url("../../img/invite-send-bg.png") repeat scroll 0 0 transparent; margin:-13px 0 0 -5px;}
+#BDBridgeInviteWrap #BDBridgeChatBox #BDBridgeChatBgMiddle {float:left; width:200px; height:52px; background-color:#d6e3f0; margin:-7px 0 0 0; }
+#BDBridgeInviteWrap #BDBridgeChatArea {position:absolute; top:12px; right:60px;height:32px; border:1px solid #999; font-family:Tahoma; font-size:12px; resize:none;}
+#BDBridgeInviteWrap #BDBridgeInviteIframe {position:absolute; top:0; left:0; border:0; display:none}

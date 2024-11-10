@@ -1,0 +1,424 @@
+@charset "utf-8";
+/**
+ * 商桥访客端 样式重定义 
+ * 解决展现端样式被客户网站覆盖问题
+ * @author renshaobo@baidu.com
+ */
+#BDBridgeWrap,
+#BDBridgeNewWrap,
+#BDBridgeFixedWrap,
+#BDBridgeWrap div,
+#BDBridgeNewWrap div,
+#BDBridgeFixedWrap div,
+#BDBridgeWrap ul,
+#BDBridgeNewWrap ul,
+#BDBridgeFixedWrap ul,
+#BDBridgeWrap li,
+#BDBridgeNewWrap li,
+#BDBridgeFixedWrap li,
+#BDBridgeWrap span,
+#BDBridgeNewWrap span,
+#BDBridgeFixedWrap span,
+#BDBridgeWrap a,
+#BDBridgeNewWrap a,
+#BDBridgeFixedWrap a {
+    
+    /**
+     * width: 100%;
+     */
+    width: auto;
+    height: auto;
+
+    /**
+     * margin: 0 auto;
+     */
+    margin: 0;
+    padding: 0;
+
+    background-color: transparent;
+    background-position: 0% 0%; 
+    background-size: auto; 
+    background-repeat: repeat;
+    background-origin: padding-box; 
+    background-clip: border-box; 
+    background-attachment: scroll; 
+    background-image: none;
+
+    border: none;
+    outline: invert none medium;
+
+    color: inherit;
+    direction: ltr;
+    letter-spacing: normal;
+    line-height: normal;
+    text-align: left;
+    text-decoration: none;
+    text-indent: 0;
+    text-transform: none;
+    white-space: normal;
+    word-spacing: normal;
+
+    font-size: 12px;
+    font-family: Tahoma,"宋体",Helvetica,sans-serif;
+    font-size-adjust: none;
+    font-stretch: normal;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: inherit;
+
+    visibility: inherit;
+    overflow:  visible;
+
+    list-style: none;
+
+    float: none;
+    /**
+     * clear: both;
+     */
+    clear: none;
+
+    position: static;
+    top: auto;
+    left: auto;
+
+    vertical-align: baseline;
+
+    -moz-box-sizing: content-box;  
+    -webkit-box-sizing: content-box; 
+    -o-box-sizing: content-box; 
+    -ms-box-sizing: content-box; 
+    box-sizing: content-box;
+}
+
+#BDBridgeWrap,
+#BDBridgeNewWrap,
+#BDBridgeFixedWrap {
+    clear: both;
+}
+
+#BDBridgeWrap,
+#BDBridgeNewWrap,
+#BDBridgeFixedWrap,
+#BDBridgeWrap div,
+#BDBridgeNewWrap div,
+#BDBridgeFixedWrap div,
+#BDBridgeWrap ul,
+#BDBridgeNewWrap ul,
+#BDBridgeFixedWrap ul,
+#BDBridgeWrap li,
+#BDBridgeNewWrap li,
+#BDBridgeFixedWrap li {
+    display: block;
+}
+
+#BDBridgeWrap span,
+#BDBridgeNewWrap span,
+#BDBridgeFixedWrap span,
+#BDBridgeWrap a,
+#BDBridgeNewWrap a,
+#BDBridgeFixedWrap a {
+    display: inline;
+}/**
+ * 商桥展现端 本地存储样式
+ * @charset "utf-8" 
+ * @import m-front-redim.css
+ * @author renshaobo@baidu.com
+ */
+
+#BDBridgeLS {
+    width:2px; 
+    height:2px; 
+    position:fixed !important; 
+    _position:absolute !important; 
+    top:50% !important; 
+    right:10px !important; 
+    z-index:2147483647 !important;
+}/**
+ * 商桥展现端 咨询图标样式
+ * 全部以IconContainer为前缀，提高优先级
+ * 原有修复暂不去掉，保证稳定性
+ * @charset "utf-8" 
+ * @import m-front-redim.css
+ * @author renshaobo@baidu.com
+ */
+
+#BDBridgeIconWrap { 
+    z-index: 2147483647;
+}
+
+#BDBridgeFixedWrap #IconContainer,
+#BDBridgeIconWrap #IconContainer {
+    position: relative;
+    z-index: 2147483647;
+    font-size: 12px;
+    top: 0;
+    left: 0;
+}
+
+#IconContainer .bdbridge-icon-left { 
+    width: auto; 
+    zoom : 1;
+}
+#IconContainer .bdbridge-icon-right { 
+    width: auto; 
+    margin-left: 0; 
+    margin-right: 0; 
+    zoom: 1;
+}
+
+/* reset text-align */
+#IconContainer #bridgehead,
+#IconContainer #bridgebottom, 
+#IconContainer .bdbridge-icon-left,
+#IconContainer .bdbridge-icon-right,
+#IconContainer .bdbridge-item-txt {
+    text-align: left;
+}
+
+#IconContainer .bdbridge-icon-right ul, 
+#IconContainer .bdbridge-icon-right li {
+    float: none;
+    display: block;
+}
+
+#IconContainer .bdbridge-icon-group li {
+    list-style:none;
+}
+#IconContainer .bdbridge-icon-group {
+    padding-bottom:8px;   
+    padding-top:2px;  
+    margin-right: 0;
+    margin-left: 0;  
+    overflow: hidden;
+}
+#IconContainer .bdbridge-icon-group ul{
+    margin: 0px;
+    margin-top:2px;
+    margin-bottom:0px;
+    padding:0px;
+}
+
+#IconContainer .opacitymask {
+    filter:alpha(opacity=100);
+    -moz-opacity:1;
+    -khtml-opacity: 1;
+    opacity: 1;
+    position:absolute;
+    left:0;
+    -moz-border-radius: 6px;       /* mozilla 私有 */
+    -webkit-border-radius: 6px;    /* webkit 私有 */
+    border-radius: 6px;            /* 标准写法(chrome支持) */
+}
+#IconContainer .opacitymaskhover {
+    filter:alpha(opacity=40);
+    -moz-opacity:0.6;
+    -khtml-opacity: 0.6;
+    opacity: 0.6;
+    position:absolute;
+    left:0;
+    -moz-border-radius: 6px;       
+    -webkit-border-radius: 6px;    
+    border-radius: 6px;   
+    cursor:pointer;    
+    
+}
+#IconContainer .masktxt{
+    position:relative;
+    zoom:1;
+    text-align: left;
+    clear: none;
+    *width: auto;
+}
+
+#IconContainer #bridgeopacity {
+    height:40px;
+    position:absolute;
+}
+
+#IconContainer .bdbridge-group-item{
+    font-weight:bold;
+    margin-left:10px;
+    position:relative;
+    -moz-border-radius: 6px;       /* mozilla 私有 */
+    -webkit-border-radius: 6px;    /* webkit 私有 */
+    border-radius: 6px;            /* 标准写法(chrome支持) */
+    zoom:1;
+    overflow: hidden; 
+}
+#IconContainer .bdbridge-group-item:hover{
+  cursor:pointer;
+}
+#IconContainer .bdbridge-user-group-item{
+    font-weight:bold;
+    margin-left:10px;
+    position:relative;
+    -moz-border-radius: 6px;       /* mozilla 私有 */
+    -webkit-border-radius: 6px;    /* webkit 私有 */
+    border-radius: 6px;            /* 标准写法(chrome支持) */
+    zoom:1;
+    line-height: 15px\9;
+    overflow: hidden;
+}
+#IconContainer .bdbridge-user-group-item div {
+    *width: auto;
+}
+#IconContainer .bdbridge-icon-group div{
+    line-height : 1.4;
+}
+#IconContainer .bdbridge-user-item{
+    line-height: 21px;
+    margin-left:15px;
+    padding:1px;
+    overflow: hidden;
+    zoom: 1;
+    height: 24px;
+}
+#IconContainer .bdbridge-user-item:hover, 
+#IconContainer .bdbridge-user-item-hover{
+    cursor:pointer;
+    filter:alpha(opacity=80);
+    -moz-opacity:0.5;
+    -khtml-opacity:0.5;
+    opacity:0.5;
+    border:1px solid #ffffff;
+    padding:0px;
+    background:#cccccc;
+}
+#IconContainer #bridgehead{
+    position:relative;
+    margin-right: 0;
+    margin-left: 0;
+    text-align: left;
+    overflow: hidden;
+}
+#IconContainer .bdbridge-bridgehead-hover{
+    cursor:pointer;
+}
+#IconContainer .bdridge-user-img{
+    background:url(../../img/matrix/btn.png) 0 -75px;
+    width:10px;
+    height:13px;
+    line-height:13px;
+    margin-top:4px;
+    margin-right:5px;
+}
+
+#IconContainer .bdridge-user-img-disable{
+    background:url(../../img/matrix/btn.png) -72px -62px;
+    width:10px;
+    height:13px;
+    line-height:13px;
+    margin-top:4px;
+    margin-right:5px;
+}
+
+#IconContainer .bdridge-group-img{
+    background:url(../../img/matrix/btn.png) -34px -48px;
+    width:16px;
+    height:14px;
+    line-height:16px;
+    position:relative;
+    margin-left:5px;
+    margin-top:5px;
+    cursor:pointer;
+}
+#IconContainer .bdridge-group-img-disable{
+    background:url(../../img/matrix/btn.png) -70px -48px;
+    width:16px;
+    height:14px;
+    line-height:16px;
+    position:relative;
+    margin-left:5px;
+    margin-top:5px;
+}
+#IconContainer .bdbridge-left-img{
+    background:url(../../img/matrix/icon_close.png) -50px 0 no-repeat;
+    width:25px;
+    height:66px;
+}
+#IconContainer .bdbridge-left-img:hover{
+    background:url(../../img/matrix/icon_close.png) -75px 0 no-repeat;
+    cursor:pointer;
+}
+#IconContainer .bdbridge-left-hd-img{
+    background:url(../../img/matrix/icon_close.png) -25px 0 no-repeat;
+    width:25px;
+    height:68px;
+}
+#IconContainer #bdbridge-left-close{
+    margin-left: 0;
+    margin-right: 0;
+}
+#IconContainer #bdbridge-left-close:hover{
+    cursor:pointer;
+    zoom: 1;
+}
+#IconContainer .bdbridge-left-hd-img:hover{
+    background:url(../../img/matrix/icon_close.png) 0 0 no-repeat;
+}
+#IconContainer .bdbridge-right-img{
+    background:url(../../img/matrix/icon_close.png) -100px 0 no-repeat;
+    width:23px;
+    height:66px;
+    margin-left: 0;
+    margin-right: 0;
+}
+#IconContainer .bdbridge-right-img:hover{
+    background:url(../../img/matrix/icon_close.png) -123px 0 no-repeat;
+}
+#IconContainer .bdbridge-right-hd-img{
+    background:url(../../img/matrix/icon_close.png) -146px 0 no-repeat;
+    width:25px;
+    height:68px;
+}
+#IconContainer .bdbridge-right-hd-img:hover{
+    background:url(../../img/matrix/icon_close.png) -171px 0 no-repeat;
+}
+#IconContainer .bdbridge-item{
+    float:left;
+}
+#IconContainer .bdbridge-user-item:after{
+    content:".";
+    height:1px;
+    visibility:hidden;
+    display:block;
+    clear:both;
+}
+
+#IconContainer .bdbridge-icon-head {
+    margin-left: 0px;
+    width:90px;
+    height:30px;
+    position:absolute;
+}
+
+#BDBridgeIconWrap #BDBridgeIconIframe,
+#BDBridgeFixedWrap #BDBridgeIconIframe {
+    position:absolute; 
+    top:0; 
+    left:0; 
+    border:none;
+    background:transparent;
+}
+
+/* added 2012 10 25*/
+#IconContainer .bdbridge-item-txt { 
+    margin-left: 15px; 
+    width: auto;
+    clear: none;
+    white-space: nowrap;
+    *width: 1px;
+}
+#IconContainer .bdbridge-item-group-txt { 
+    margin-left: 25px; 
+    text-align: left; 
+    cursor: pointer; 
+    width: auto; 
+    margin-top: 4px;
+    clear: none;
+}
+
+#IconContainer .bdbridge-icon-bottom { 
+    margin-left: 0; 
+    margin-right: 0;
+}
